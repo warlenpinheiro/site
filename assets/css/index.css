@@ -50,6 +50,46 @@ nav a li{
 	color: black;
 }
 
+.avatar img{
+	height: 126px;
+	width: 126px;
+	z-index: 100;
+}
+
+.avatar{
+	z-index: 99;
+	border: 7px outset black;
+	border-bottom: none;
+	height: 76px;
+	width: 140px;
+}
+
+.box{
+	z-index: 99;
+}
+
+.title{
+	margin-top: 50px;
+	padding-left: 10px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 60px;
+}
+
+.sobre-mimRow{
+	min-height: 200px;
+	margin-left: 40px !important;
+	margin-top: 100px;
+}
+
+.sobre-mimRow img{
+}
+
+.sobre-mim{
+	background-color: white;
+}
+
 @media only screen and (min-width: 200px) and (max-width: 500px){
 	.bg_video{
 		display: none;
