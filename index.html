@@ -24,10 +24,13 @@
 	    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
-		<video autoplay loop class="bg_video">
+		<div id="loading">
+
+		</div>
+		<video autoplay loop class="bg_video" style="display: none;">
 			<source src="assets/media/background.mp4" type="video/mp4">
 		</video>
-		<div class="container-fluid">
+		<div class="container-fluid bg_mobile" style="display: none;">
 			<nav class="navbar navbar-expand-md justify-content-md-center justify-content-start my-5">
 	            <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
 	                <span class="navbar-toggler-icon"></span>
@@ -58,16 +61,26 @@
 	            </div>
 	        </nav>
 	        <div class="row sobre-mimRow">
-	        	<div class="box col-lg-6 offset-lg-1">
+	        	<div class="box col-lg-6 col-sm-6 col-xs-6 col-md-6 offset-xs-1 offset-md-1 offset-sm-1 offset-lg-1">
 	        		<div class="avatar">
 	        			<img src="assets/media/eu.jpeg" class="img-responsive img-rounded">
 	        		</div>
 	        	</div>
-	        	<div class="col-lg-6 sobre-mim">
-	        		<h4 class="title offset-lg-2">Quem sou</h4>
-	        		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	        	<div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 sobre-mim">
+	        		<h4 class="title offset-lg-2 offset-xs-2 offset-md-2 offset-sm-2">Quem sou</h4>
+	        		<p>Apaixonado por tecnologias em geral e sempre em busca de conhecimento tendo como maior hobby o aprendizado de novas tecnologias, esse sou eu.
+	        		Me chamo Warlen Pinheiro, sou formado em Analise e desenvolvimento de sistemas e estudante de engenharia da computação. Atualmente tenho direcionado minha carreira para as áreas de desenvolvimento Web e Mobile, porém devo admitir que tenho uma certa quedinha pela área de segurança e forense computacional.</p>
 	        	</div>
 	        </div>
 		</div>
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script>
+			$(window).on('load', function () {
+			      $("#loading").fadeOut("slow");
+			      $(".bg_video").toggle("fast");
+			      $(".bg_mobile").toggle("fast");
+			});
+		</script>
 	</body>
 </html>
