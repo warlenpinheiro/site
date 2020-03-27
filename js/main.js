@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     var alturas = {};
     $('.section').each(function () {
-    alturas[$(this).prop('id')] = $(this).offset().top - 200; // ex: alturas['section_2'] = 600
+    alturas[$(this).prop('id')] = $(this).offset().top - 300; // ex: alturas['section_2'] = 600
     });
     console.log(alturas);
 
