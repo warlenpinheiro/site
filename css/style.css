@@ -9,6 +9,17 @@
 /* import global styling */ 
 @import url(./partials/global.css);
 
+#loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('http://i.imgur.com/zAD2y29.gif') 50% 50% no-repeat white;
+    
+}
+
 
 /* start navigation */ 
 
@@ -348,7 +359,7 @@ footer.footer-area .social a:hover > i{
 /* End Footer */ 
 
 .skill-img img{
-    height: 100px;
+    max-height: 100px;
     transition: .5s;
 }
 
