@@ -346,3 +346,17 @@ footer.footer-area .social a:hover > i{
 
 
 /* End Footer */ 
+
+.skill-img img{
+    height: 100px;
+    transition: .5s;
+}
+
+.skill-box{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.skill-box:hover .skill-img{
+    transform: translateY(-10px);
+}
