@@ -26,26 +26,8 @@
         width: 13rem;
     }
 
-    .header_area .main-menu .nav-item .nav-link{
-        font: normal 500 15px/2px var(--robotoMobile);
-    }
-
-    .site-main .about-area .about-title h2 > span{
-        font: normal bold 49px/ 60px var(--robotoMobile);
-    }
-
-    .site-main .brand-area .experience-area .years-area .years{
-        font: normal bold 84px/40px var(--robotoMobile);
-    }
-    
-    .site-main .brand-area .experience-area .years-area h2 > span{
-        font: normal 600 22px/30px var(--robotoMobile);
-    }
-    .site-main .project-area .grid .our-project > .title h4{
-        font: normal 700 25px/12px var(--robotoMobile);
-    }
-    .site-main .about-area .client .about-client h4{
-        font: normal 500 21px/ 20px var(--robotoMobile);
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif !important;
     }
 
 }
@@ -73,29 +55,7 @@
     }
 
     .site-main .project-area .button-group button{
-        font: normal 500 18px/40px var(--robotoMobile);
-    }
-
-    .header_area .main-menu .nav-item .nav-link{
-        font: normal 500 15px/2px var(--robotoMobile);
-    }
-
-    .site-main .about-area .about-title h2 > span{
-        font: normal bold 49px/ 60px var(--robotoMobile);
-    }
-
-    .site-main .brand-area .experience-area .years-area .years{
-        font: normal bold 84px/40px var(--robotoMobile);
-    }
-    
-    .site-main .brand-area .experience-area .years-area h2 > span{
-        font: normal 600 22px/30px var(--robotoMobile);
-    }
-    .site-main .project-area .grid .our-project > .title h4{
-        font: normal 700 25px/12px var(--robotoMobile);
-    }
-    .site-main .about-area .client .about-client h4{
-        font: normal 500 21px/ 20px var(--robotoMobile);
+        font: normal 500 18px/40px var(--roboto);
     }
 
     .site-main .about-area .about-title p{
@@ -105,6 +65,10 @@
     .site-main .subscribe-us-area .subscribe form .input-textbox input{
         width: 20rem;
         margin: 5%;
+    }
+
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif !important;
     }
 }
 
