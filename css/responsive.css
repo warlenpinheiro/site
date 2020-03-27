@@ -22,7 +22,7 @@
         width: 15rem    !important;
     }
 
-    .site-main > .services-area .services{
+    .site-main > .services-area .services, .site-main > .experience-area .experience{
         width: 13rem;
     }
 
@@ -86,6 +86,8 @@
 
     .site-main .brand-area,
     .site-main .services-area .services-title,
+    .site-main .about-area, .site-main .brand-area,
+    .site-main .experience-area .experience-title,
     .site-main .about-area{
         padding: 3% 4%;
     }
