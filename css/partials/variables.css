@@ -23,6 +23,6 @@ html, body{
    
 
     /* font family variables. */ 
-    --roboto: 'Roboto', cursive;
+    --roboto: 'Roboto', sans-serif;
     --robotoMobile: 'Roboto', normal;
 } 
