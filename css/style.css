@@ -23,6 +23,10 @@
 
 /* start navigation */ 
 
+body {
+    font: normal 500 15px/2px var(--roboto);
+}
+
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
 }
