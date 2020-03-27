@@ -1,25 +1,5 @@
 $(document).ready(function () {
 
-
-    let $btns = $('.project-area .button-group button');
-
-
-    $btns.click(function (e) {
-
-        $('.project-area .button-group button').removeClass('active');
-        e.target.classList.add('active');
-
-        let selector = $(e.target).attr('data-filter');
-        $('.project-area .grid').isotope({
-            filter: selector
-        });
-
-        return false;
-    })
-
-    $('.project-area .button-group #btn1').trigger('click');
-
-
    
     // sticky navigation menu
 
@@ -48,6 +28,22 @@ $(document).ready(function () {
         $('html, body').animate({ 
             scrollTop: targetOffset - 100
         }, 500);
+    });
+
+    var alturas = {};
+    $('.section').each(function () {
+    alturas[$(this).prop('id')] = $(this).offset().top - 200; // ex: alturas['section_2'] = 600
+    });
+    console.log(alturas);
+
+    // quando fazemos scoll vamos percorrer o nosso obj alturas e comparar a altura de cada secção com o que já andamos em scroll
+    $(window).on('scroll', function() {
+    for(var seccao in alturas) {
+        if($(window).scrollTop() >= alturas[seccao]) {
+        $('.nav-item').removeClass('active'); // removemos a classe ative
+        $('.nav-link[href="#' +seccao+ '"]').parent().addClass('active'); // adicionamos a class active ao item do menu cuja data-section é igual ao id da secção que está a uma maior ou igual distancia do topo do que aquela que percorremos com o scroll
+        }
+    }
     });
 
 });
