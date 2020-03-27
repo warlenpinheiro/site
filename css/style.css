@@ -24,7 +24,7 @@
 /* start navigation */ 
 
 body {
-    font: normal 500 15px/2px var(--roboto);
+    font: normal 500 15px/2px var(--roboto) !important;
 }
 
 .header_area .main-menu .navbar .navbar-brand{
