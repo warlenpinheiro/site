@@ -209,6 +209,10 @@ body {
     font-size: 35px;
 }
 
+.services-area {
+    margin: 10vh 0;
+}
+
 .site-main > .services-area .services{
     background: rgba(248, 252, 253, 0.973);
     padding: 2rem 0;
